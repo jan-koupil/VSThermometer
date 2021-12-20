@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="GoIOdotNETCore">
+      <HintPath>..\..\GoIO_SDK\redist\GoIO_DLL\dotNETCore\GoIOdotNETCore.dll</HintPath>
+    </Reference>
+    <Reference Include="VSTCoreDefsdotNETCore">
+      <HintPath>..\..\GoIO_SDK\redist\VSTCoreDefsdotNETCore\VSTCoreDefsdotNETCore.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="GoIO_DLL.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
